@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <title>Carrusel</title>
+    </head>
+    <body bgcolor="black" text="white" link="blue" vlink="red" alink="yellow">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Imagenes/BannerAlejandro.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/BannerFrontend.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/BannerBackend.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h3>Arquitecturas Web</h3>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        E-commerce (Amazon, Coches.net)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>Utilizan una estructura vertical/jerárquica
+                            profunda.</strong> La página principal conecta a
+                        categorías principales, luego subcategorías y finalmente
+                        al producto (ej: Inicio > Electrónica > Televisores >
+                        Smart TV 4K).
+                        <br>
+                        <img src="Imagenes\ecommerce1.jpg" width="500">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Aplicaciones de Página Simple (SPA)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>La web se carga una sola vez y actualiza el
+                            contenido dinámicamente.</strong> freciendo una
+                        experiencia fluida y rápida.
+                        <br>
+                        <img src="Imagenes\SPA.jpg" width="500">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Enlazado Interno (Interlinking)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Enlazado Interno (Interlinking).</strong>
+                        Conectar páginas relacionadas para distribuir la
+                        autoridad.
+                        <br>
+                        <img src="Imagenes\interlinking.png" width="500">
+                    </div>
+                </div>
+            </div>
+
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>

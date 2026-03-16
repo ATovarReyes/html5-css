@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bordes y Sombras</title>
+        <link rel="stylesheet" href="CSS/estilo1.css">
+    </head>
+    <body>
+        <header>
+            <h1>Tutorial HTML 5, CSS Bordes y sombreados</h1>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Inicio </a></li>
+                <li> <a href="Bordes.html">Bordes </a></li>
+                <li> <a href="Sombras.html">Sombras </a></li>
+                <li> <a href="Cajas.html">Cajas Flotantes </a></li>
+                <li> <a href="Posicion.html">Posicion </a></li>
+                <li> <a href="Transformacion.html">Transformacion </a></li>
+                <li> <a href="Formularios.html">Formularios </a></li>
+                <li> <a href="Iframe.html">Iframe </a></li>
+                <li> <a href="Transiciones.html">Transiciones </a></li>
+                <li> <a href="Columnas.html">Columnas </a></li>
+                <li> <a href="Video.html">Video </a></li>
+                <li> <a href="Audio.html">Audio </a></li>
+                <li> <a href="Transparencias.html">Transparencias </a></li>
+                <li> <a href="Animacion.html">Animacion </a></li>
+                <li> <a href="Svg.html">SVG </a></li>
+                <li> <a href="Responsive.html">Responsive </a></li>
+                <li> <a href="Editable.html">Contenido editable </a></li>
+                <li> <a href="Storage.html">Storage </a></li>
+            </ul>
+
+        </nav>
+
+        <section>
+            <h2>Líneas separadoras horizontales</h2>
+
+            <article>
+                <p>Existen dos formas para crear una línea separadora horizontal
+                    y una única forma para crear una línea separadora vertical.
+                    Para crear una línea horizontal la forma fácil y rápida es
+                    utilizar la etiqueta hr, que no se cierra y que crea una
+                    línea horizontal simple.</p>
+
+                <p>Esta etiqueta admite algunas características CSS como el
+                    grosor de la línea (border-width), la anchura (width), el
+                    color (border-color) o el tipo de línea (border-style).</p>
+
+                <hr style="border-style:dotted;">
+
+                <p>
+                    Para representar la línea azul punteada que hay sobre este
+                    párrafo es necesario tanto la etiqueta html como las
+                    declaraciones CSS:
+                    hr>
+                    En este ejemplo el selector CSS (hr) hace referencia a todas
+                    las líneas (hr) de la página. En el caso de querer hacer
+                    referencia únicamente a una, la etiqueta tendría que tener
+                    un id para poder identificarla (hr id="linea1">) y el
+                    selector CSS sería: #linea1 hr
+                </p>
+                <br><b>none</b> Sin linea
+                <br><b>solid</b> con linea continua
+                <br><b>dotted</b> linea punteada
+                <br><b>dashed</b> linea duscibtuna (segmentos cortos de linea)
+                <br><b>inset</b> linea con color en bajorelieve
+                <br><b>outset</b>
+                <pre>tal cual deje el texto</pre>
+            </article>
+            <h2>Líneas separadoras verticales</h2>
+            <article>
+                <p>Para crear líneas verticales tenemos que definir uno de los 4
+                    bordes que tiene una caja ( div >), utilizando una (o
+                    varias) de estas propiedades:
+                    <div class="cuadro-css">
+                        border-top: 1px solid red;
+                        <br>
+                        border-bottom: 2px dotted green;
+                        <br>
+                        border-right: 1px dashed #3C5391;
+                        <br>
+                        border-left: 1px inset orange;
+                    </div>
+                    <br>
+                    Si se quiere añadir una única línea habría que añadir sólo
+                    una de estas líneas.</p>
+
+                <hr style="border-style:outset;">
+            </article>
+
+            <h2>Bordes simples</h2>
+            <article>
+                Para poder indicar un borde determinado con un color y un grosor
+                concreto para un div >, dentro del código CSS, utilizamos la
+                propiedad 'border', que utiliza el siguiente formato:
+                <div class="cuadro-css">
+                    border: 2px solid grey;
+                </div>
+
+                En este ejemplo, el valor '2px establece el grosor del borde
+                en 2 píxeles, el valor 'solid' especifica el tipo de borde,
+                mientras que finalmente se indica el color, ya sea
+                utilizando el nombre de color, o bien el código de color en
+                hexadecimal (anteponiendo el símbolo #).
+                <br>
+
+                En lo referente a los tipos de bordes existen las siguientes
+                posibilidades:
+                <br>
+                none: sin línea.
+
+                <div class="caja solid">
+                    <b>solid:</b> con línea continua (valor por defecto).
+                </div>
+
+                <div class="caja dotted">
+                    <b>dotted:</b> línea punteada.
+                </div>
+
+                <div class="caja dashed">
+                    <b>dashed:</b> línea discontinua (segmentos cortos de
+                    línea).
+                </div>
+
+                <div class="caja inset">
+                    <b>inset:</b> línea con el color en bajorrelieve.
+                </div>
+
+                <div class="caja outset">
+                    <b>outset:</b> línea que simula el relieve.
+                </div>
+
+            </article>
+
+            <h2>Bordes redondeados</h2>
+            <article>
+                <p>Con la propiedad border-radius tenemos la posibilidad de
+                    crear
+                    div > con las esquinas con bordes redondeados, pudiendo
+                    especificar la suavidad de las esquinas de manera conjunta o
+                    cada una de las esquinas por separado.
+
+                    Para poder visualizar una esquina con borde redondeado,
+                    además
+                    de la propiedad border-radius, tenemos que definir un borde
+                    normal (con border) y/o indicar un color de fondo (con
+                    background-color).
+                </p>
+                <br>
+                <div id="apartado1">
+                </div>
+                <br>
+                <p>Con estas dos líneas de código CSS practicamente no podemos
+                    apreciar ninguna esquina redondeada, ya que como el div no
+                    tiene contenido y no hemos definido la altura del div
+                    id="apartado1" > el navegador establece una altura de 0
+                    píxeles.
+                    <br>
+                    Para solucionarlo, vamos a añadir las dimensiones que
+                    tendrá este div > para poder apreciar los bordes
+                    redondeados:
+                    <br>
+                    <div id="apartado2">
+                    </div>
+                    <br>
+
+                    <p>
+                        Con 'width' y 'height' definimos el tamaño del div > que
+                            tiene como id el nombre "apartado1". En este ejemplo
+                            se ha definido una anchura de 300 píxeles por 100 px
+                            de alto (el tamaño se podría especificar también en
+                            porcentaje, sustituyendo 'px' por '%').
+                            Utilizando 'border' indicamos un borde de un grosor
+                            de 3 píxeles, con una línea contínua sólida de color
+                            marrón [brown] (el color también podría
+                            especificarse en código hexadecimal).<br>
+
+                            Por último, con 'border-radius' especificamos que la
+                            suavidad de las 4 esquinas sea de 22 píxeles (el
+                            valor 0 correspondería a una esquina totalmente
+                            recta).<br>
+
+                            Si queremos indicar diferentes valores para cada una
+                            de las esquinas, tendríamos que especificar los 4
+                            valores en el siguiente orden:
+                            <br>
+                            <br>
+                            1º: esquina superior/izquierda
+                            <br>
+                            2º: superior/derecha
+                            <br>
+                            3º: inferior/derecha
+                            <br>
+                            4º: inferior/izquierda.
+                        </p>
+                    </p>
+                </article>
+
+            </section>
+            <article></article>
+            <article></article>
+            <footer></footer>
+        </body>
+    </html>

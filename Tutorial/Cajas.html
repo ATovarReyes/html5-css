@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cajas</title>
+        <link rel="stylesheet" href="CSS/estilo1.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Tutorial HTML 5, CSS Cajas</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="index.html">Inicio </a></li>
+                <li> <a href="Bordes.html">Bordes </a></li>
+                <li> <a href="Sombras.html">Sombras </a></li>
+                <li> <a href="Cajas.html">Cajas Flotantes </a></li>
+                <li> <a href="Posicion.html">Posicion </a></li>
+                <li> <a href="Transformacion.html">Transformacion </a></li>
+                <li> <a href="Formularios.html">Formularios </a></li>
+                <li> <a href="Iframe.html">Iframe </a></li>
+                <li> <a href="Transiciones.html">Transiciones </a></li>
+                <li> <a href="Columnas.html">Columnas </a></li>
+                <li> <a href="Video.html">Video </a></li>
+                <li> <a href="Audio.html">Audio </a></li>
+                <li> <a href="Transparencias.html">Transparencias </a></li>
+                <li> <a href="Animacion.html">Animacion </a></li>
+                <li> <a href="Svg.html">SVG </a></li>
+                <li> <a href="Responsive.html">Responsive </a></li>
+                <li> <a href="Editable.html">Contenido editable </a></li>
+                <li> <a href="Storage.html">Storage </a></li>
+            </ul>
+
+        </nav>
+
+        <section>
+
+            <h2>Uso de float</h2>
+            <article>
+                <p>La propiedad float sirve para alinear cajas o < divs > a la
+                    izquierda o a la derecha de otras cajas, utilizando el valor
+                    float:left o float:right.
+                    Al usar float hay que tener claro una serie de
+                    cuestiones:</p>
+                <ol>
+                    <li>Para alinear varias cajas (o < divs >) una a la derecha
+                        de la otra, todas las cajas tienen que tener un width
+                        determinado y un float.</li>
+                    <li>La suma de todos los width de todas las cajas deben
+                        caber en el ancho del < body >. Si no caben se pondrá
+                        una
+                        debajo de la otra.</li>
+                    <li>Por lo general, en todas las cajas se utiliza el mismo
+                        tipo de alineación (o todas left o todas right).</li>
+                    <li>Aunque se quiera colocar una caja a la derecha de otra,
+                        se utiliza float:left, ya que el valor right indica que
+                        las cajas se alinearán desde la parte derecha de la
+                        ventana del navegador.</li>
+                    <li>La siguiente caja que venga después de la última caja
+                        que utiliza un float, (aunque no tenga ningún valor
+                        float), se alineará en el espacio vacio que deje la
+                        alineación anterior. Para evitar esto, a esta nueva caja
+                        se le debe añadir la declaración: clear:both;. De esta
+                        manera no aprovechará el espacio vacio que pudiera
+                        quedar y se colocará correctamente debajo de la última
+                        caja.</li>
+                </ol>
+            </article>
+
+            <h2>Ejemplo práctico del uso de float</h2>
+            <article>
+                <p>Tenemos dos cajas (o < divs >), etiquetadas con los
+                    id="caja1" e id="caja2". La primera (#caja1) contiene una
+                    imagen de 200 x 133 píxeles, mientras que #caja2 contiene un
+                    texto centrado verticalmente.
+                    Para que ambas cajas no se sitúen una debajo de la otra
+                    (como es lo habitual), tenemos que añadir un width y un
+                    float a cada caja:</p>
+                <div class="caja-codigo">
+                    #caja1{<br>
+                    width:200px;<br>
+                    float:left;<br>
+                    margin-right:15px;<br>
+                    }<br>
+                    #caja2{<br>
+                    width:200px;<br>
+                    float:left;<br>
+                    }<br>
+                </div><br><br>
+                <p>El resultado es:</p>
+                <section class="#caja1"></section>
+                <p>El problema que tenemos es que ahora queda un espacio vacío
+                    muy grande a la derecha de #caja2 (justamente en el espacio
+                    que ocupa este mismo texto). Así, cualquier cosa que
+                    pongamos en el código html DETRÁS de #caja2, aunque no le
+                    asignemos ningún float se colocará en este espacio
+                    vacío.</p><br>
+                <p>Para que este <div> se coloque debajo, le tendríamos que
+                        aplicar la declaración CSS float:both.</p>
+                    <section class="#caja2"></section>
+                </article>
+                <h2>clear:both</h2>
+                <article>
+                    <p>La mayoría de problemas de colocación que se producen al
+                        utilizar la propiedad float se pueden solucionar de dos
+                        maneras:</p>
+                    <ol>
+                        <li>Utilizando clear:both es la solución socorrida,
+                            aunque tremendamente efectiva. Si a la primera caja
+                            que viene detrás de la última caja que tiene la
+                            propiedad float se le aplica clear:both;, NO
+                            aprovechará el espacio que queda libre y dicho < div
+                            > se colocará debajo de la caja anterior.</li>
+                        <div class="caja-codigo">
+                            #caja_descolocada{<br>
+                            clear:both;<br>
+                        </div><br><br>
+                        <li>
+                            Utilizando < div > contenedores es la forma más
+                            elegante y correcta, aunque también la menos
+                            utilizada. Consiste en meter #caja1 y #caja2
+                            dentro de otro < div >, al que le daremos -al
+                            menos- una altura (height) determinada o
+                            un display:inline-block; para que
+                            automáticamente la altura se adapte al
+                            contenido.
+                        </li>
+
+                        <div class="caja-codigo">
+                            < div id="caja1" ><br>
+                            < /div ><br><br>
+
+                            < div id="caja2" ><br>
+                            < div ><br>
+                        </div><br><br>
+                        <p>A esta estructura HTML le tenemos que añadir los
+                            correspondientes selectores CSS:</p>
+
+                        <div class="caja-codigo">
+
+                            #cajas{<br>
+                            height:131px;<br>
+                            }<br>
+                            #caja1{<br>
+                            width:395px;<br>
+                            float:left;<br>
+                            margin-right:15px;<br>
+                            }<br>
+                            #caja2{<br>
+                            width:300px;<br>
+                            float:left;<br>
+                            }
+
+                        </div>
+                    </ol>
+                </article>
+
+            </section>
+
+            <footer>
+                <p>&copy; 2023 Tutorial HTML 5 y CSS. Todos los
+                    derechos
+                    reservados.</p>
+            </footer>
+        </body>
+    </html>

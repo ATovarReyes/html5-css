@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.0;
+    color: #333;
+    background-color: antiquewhite;
+    /* max-width: 130px; */
+    margin: auto;
+    padding: 30px;
+}
+header {
+    background-color: #333;
+    color: aliceblue;
+    padding: 3px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 3px;
+}
+
+header h1 {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+nav{
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: cadetblue;
+}
+section {
+    flex: 2px;
+    min-width: 300px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 0.5rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+}   
+
+article hr {
+    
+    border-width:4px;
+    /* border-style:dotted; */
+    border-color:blue;
+    width:50%;
+
+} 
+
+
+article {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #333;
+}
+article h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article ol li {
+    margin-bottom: 1rem;
+    display: list-item;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+.cuadro-css {
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-family: monospace;
+  font-size: 16px;
+  color: #000;
+  width: fit-content;
+
+  border-top: 1px solid red;
+  border-bottom: 2px dotted green;
+  border-right: 1px dashed #3C5391;
+  border-left: 1px inset orange;
+}
+
+.caja {
+  padding: 10px;
+  margin: 10px 0;
+  background: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.solid {
+  border: 2px solid #888;
+}
+
+.dotted {
+  border: 2px dotted #888;
+}
+
+.dashed {
+  border: 2px dashed #888;
+}
+
+.inset {
+  border: 2px inset #888;
+}
+
+.outset {
+  border: 2px outset #888;
+}
+
+#apartado1{
+   border:3px solid brown;
+   border-radius:22px;
+}
+#apartado2{
+   width:300px;
+   height:100px;
+   border:3px solid brown;
+   border-radius:22px;
+}
+
+#sectionSombra{
+    box-shadow: 6px 20px 10px black;
+}
+
+
+.caja-azul{
+    width: 500px;
+    height: 80px;
+    background-color: #1f64a5;
+    box-shadow: 6px 20px 10px black;
+}
+
+.caja-azul2{
+    width: 500px;
+    height: 80px;
+    background-color: #1f64a5;
+    box-shadow: 6px 20px 1px black;
+}
+
+.caja-azul3{
+    width: 500px;
+    height: 80px;
+    background-color: #1f64a5;
+    box-shadow: 7px 9px 15px black inset;
+}
+.caja-azulHalos{
+    width: 500px;
+    height: 80px;
+    background-color: #1f64a5;
+    box-shadow: 0px 0px 30px blue;
+}
+
+#caja-azulsombras{
+    width: 500px;
+    height: 80px;
+    background-color: #1f64a5;
+    box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;
+}
+
+#apartado1{
+    border: none;
+    text-shadow: 10px 10px 5px gray;
+}
+
+#caja1{
+  width:200px;
+  float:left;
+  margin-right:15px;
+}
+
+#caja2{
+  width:200px;
+  float:left;
+}
+
+.caja-codigo{
+    background: #d9dde1;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 6px 20px 10px rgba(0,0,0,0.4);
+    font-family: monospace;
+    width: fit-content;
+}
